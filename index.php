@@ -28,7 +28,13 @@
 									}
 								?>" class="index-avatar">
 							</div>
-							<h1 class="text-white"><?php $this->options->nickName() ?></h1>
+							<h1 class="text-white"><?php
+								if ($this->options->nickName == '') {
+									$this->options->title();
+								} else {
+									$this->options->nickName();
+								}
+							?></h1>
 							<hr/>
 							<p class="lead text-white"><?php $this->options->description() ?></p>
 						</div>
