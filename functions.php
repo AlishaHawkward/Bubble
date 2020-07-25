@@ -3,6 +3,8 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form) {
 	$logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, '', _t('站点 LOGO 地址'), _t('在这里填入一个图片 URL 地址，以在网站标题前加上一个 LOGO'));
 	$form->addInput($logoUrl);
+	$nickName = new Typecho_Widget_Helper_Form_Element_Text('nickName', NULL, '', _t('博主昵称'), _t('在这里填入你的昵称，在首页显示'));
+	$form->addInput($nickName);
 	$avatarUrl = new Typecho_Widget_Helper_Form_Element_Text('avatarUrl', NULL, '', _t('站点头像地址'), _t('在这里填入一个图片 URL 地址，以在网站首页上加上一个头像'));
 	$form->addInput($avatarUrl);
 	$indexImage = new Typecho_Widget_Helper_Form_Element_Text('indexImage', NULL, '', _t('首页背景图像地址'), _t('在这里填入一个图片 URL 地址, 以设定网站首页背景图片，留空则使用默认紫色渐变背景'));
