@@ -36,7 +36,13 @@
 								}
 							?></h1>
 							<hr/>
-							<p class="lead text-white"><?php $this->options->description() ?></p>
+							<div class="lead text-white"><?php
+								if ($this->options->nickName == '') {
+									$this->options->description();
+								} else {
+									$this->options->nickName();
+								}
+							?></div>
 						</div>
 					</div>
 				</div>
