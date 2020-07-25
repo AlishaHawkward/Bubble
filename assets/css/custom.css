@@ -20,6 +20,9 @@
     color: rgb(128, 128, 128);
     transition: all .3s;
 }
+.friend-links a:not(:first-child) {
+  margin-left: 12px;
+}
 .friend-links a:hover {
     color: rgb(32, 32, 32);
 }
