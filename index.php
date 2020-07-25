@@ -37,10 +37,10 @@
 							?></h1>
 							<hr/>
 							<div class="lead text-white"><?php
-								if ($this->options->nickName == '') {
+								if ($this->options->indexDesc == '') {
 									$this->options->description();
 								} else {
-									$this->options->nickName();
+									$this->options->indexDesc();
 								}
 							?></div>
 						</div>
