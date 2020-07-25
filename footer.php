@@ -217,6 +217,12 @@
 			$("#modal-notification").show("normal");
 		}
 	</script>
+	<!-- Custom JS -->
+	<?php
+    	if ($this->options->customJs):
+    	    $this->options->customJs();
+    	endif;
+	?>
 	<!-- Typecho footer -->
 	<?php $this->footer(); ?>
 	</body>
