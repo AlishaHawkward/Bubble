@@ -17,7 +17,7 @@
 		<div class="container">
 			<?php if ($this->options->footerWidget) { ?>
 			<div class="row">
-				<div class="col-md-4 widget">
+				<div class="col-md-4 widget" style="display: none;">
 					<h5>最新评论</h5>
 					<?php $comments_recent = $this->widget('Widget_Comments_Recent', 'pageSize=5');
 						if ($comments_recent->have())
@@ -45,8 +45,25 @@
 					<h5>近期归档</h5>
 					<ul><?php $this->widget('Widget_Contents_Post_Date', 'limit=6&type=month&format=F Y')->parse('<li><a href="{permalink}" class="footer-link">{date}</a></li>'); ?></ul>
 				</div>
+				<div class="col-md-4 widget">
+					<h5>联系方式</h5>
+					<ul class="contact">
+        				<?php 
+        					if ($this->options->siteContact != '') {
+        						$this->options->siteContact();
+        					}
+        				?>
+					</ul>
+				</div>
 			</div>
 			<hr/>
+			<div class="row friend-links">
+				<?php 
+					if ($this->options->friLinks != '') {
+						$this->options->friLinks();
+					}
+				?>
+			</div>
 			<?php } ?>
 			<div class="row">
 				<div class="col-md-6">

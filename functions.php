@@ -15,6 +15,10 @@ function themeConfig($form) {
 	$form->addInput($randomImage);
 	$bubbleShow = new Typecho_Widget_Helper_Form_Element_Radio('bubbleShow', array('0' => _t('不显示'), '1' => _t('显示')), '1', _t('背景气泡'), _t('选择是否在首页以及文章页顶部背景处显示半透明气泡'));
 	$form->addInput($bubbleShow);
+	$siteContact = new Typecho_Widget_Helper_Form_Element_Textarea('siteContact', NULL, '', _t('联系信息'), _t('在这里填入站点联系信息，需要自己排版'));
+	$form->addInput($siteContact);
+	$friLinks = new Typecho_Widget_Helper_Form_Element_Textarea('friLinks', NULL, '', _t('友情链接'), _t('在这里填入友情链接，需要自己排版'));
+	$form->addInput($friLinks);
 	$footerText = new Typecho_Widget_Helper_Form_Element_Text('footerText', NULL, 'Powered by <a href="http://typecho.org/" class="footer-link">Typecho</a> | Theme by <a href="https://github.com/trinitrotofu/Bubble" class="footer-link">Bubble</a>', _t('页脚左下角文字'), _t('在这里填入页脚左下角的说明文字，如 Copyright 和 备案信息，可添加 HTML 标签'));
 	$form->addInput($footerText);
 	$footerWidget = new Typecho_Widget_Helper_Form_Element_Radio('footerWidget', array('0' => _t('不显示'), '1' => _t('显示')), '1', _t('页脚小工具'), _t('选择是否在页面底部显示“最新评论”、“最新文章”等栏目'));

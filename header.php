@@ -30,6 +30,9 @@
 	<!-- Main CSS -->
 	<link type="text/css" href="<?php $this->options->themeUrl("assets/css/main.min.css"); ?>" rel="stylesheet">
 
+	<!-- Custom CSS -->
+	<link type="text/css" href="<?php $this->options->themeUrl("assets/css/custom.css"); ?>" rel="stylesheet">
+
 	<!-- KaTeX CSS -->
 	<?php if ($this->options->katex): ?>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
