@@ -75,7 +75,7 @@ function printAricle($that) { ?>
 	<section class="section">
 		<div class="container">
 			<div class="content">
-				<h1><a class="text-default" href="<?php $that->permalink() ?>"><?php $that->title() ?></a></h1>
+				<h2><a class="text-default" href="<?php $that->permalink() ?>"><?php $that->title() ?></a></h2>
 				<div class="list-object">
 					<span class="list-tag"><i class="fa fa-calendar-o" aria-hidden="true"></i> <time datetime="<?php $that->date('c'); ?>"><?php $that->date();?></time></span>
 					<span class="list-tag"><i class="fa fa-comments-o" aria-hidden="true"></i> <?php $that->commentsNum('%d');?> 条评论</span>

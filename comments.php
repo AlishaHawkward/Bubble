@@ -45,7 +45,7 @@
 	<div class="container" id="comments">
 		<div class="content">
 			<div class="row align-items-center justify-content-center">
-				<h3><?php $this->commentsNum(_t('暂无评论'), _t('仅有一条评论'), _t('%d 条评论')); ?></h3>
+				<h4><?php $this->commentsNum(_t('<small style="color: rgb(166, 166, 166);">看着干啥，还不发表一篇评论？</small>'), _t('仅有一条评论'), _t('%d 条评论')); ?></h4>
 			</div>
 			<?php $this->comments()->to($comments); ?>
 			<?php if ($comments->have()): ?>
@@ -56,7 +56,7 @@
 				<?php if($this->allow('comment')): ?>
 				<div id="<?php $this->respondId(); ?>" class="comment-reply">
 					<div class="row align-items-center justify-content-center">
-						<h3 id="response"><?php _e('发表评论'); ?></h3>
+						<h4 id="response"><?php _e('发表评论'); ?></h4>
 					</div>
 					<div class="row align-items-center justify-content-center">
 						<?php $comments->cancelReply(); ?>
@@ -108,7 +108,7 @@
 					</form>
 				</div>
 				<?php else: ?>
-				<div class="row align-items-center justify-content-center"><h3 id="response"><h3><?php _e('评论已关闭'); ?></h3></div>
+				<div class="row align-items-center justify-content-center"><h4 id="response"><?php _e('评论已关闭'); ?></h4></div>
 				<?php endif; ?>
 			</div>
 		</div>

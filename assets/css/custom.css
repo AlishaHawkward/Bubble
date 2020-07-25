@@ -6,6 +6,24 @@
 .navbar_search_container:hover {
   width: 280px;
 }
+.post-title {
+    font-size: 32px;
+}
+.avatar {
+    width: 48px;
+    height: 48px;
+}
+.comment-body {
+    padding-top: 8px;
+}
+.comment-head h5 {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.comment-body p {
+    display: inline-block;
+    margin-bottom: 6px;
+}
 .contact {
     color: rgb(96, 96, 96);
 }
@@ -21,7 +39,7 @@
     transition: all .3s;
 }
 .friend-links a:not(:first-child) {
-  margin-left: 12px;
+    margin-left: 12px;
 }
 .friend-links a:hover {
     color: rgb(32, 32, 32);
