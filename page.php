@@ -19,7 +19,7 @@
 			<!-- Page content -->
 			<section class="section">
 				<div class="container">
-					<div class="content">
+					<div class="content markdown-body">
 						<?php $this->content(); ?>
 					</div>
 				</div>

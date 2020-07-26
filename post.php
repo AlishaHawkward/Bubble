@@ -53,7 +53,7 @@
         					<span class="list-tag"><i class="fa fa-user-o" aria-hidden="true"></i> <a class="badge badge-warning badge-pill" href="<?php $this->author->permalink(); ?>"><?php $this->author();?></a></span>
         				</div>
 					</div>
-					<div class="content">
+					<div class="content markdown-body">
 						<?php $this->content(); ?>
 					</div>
 				</div>
