@@ -85,7 +85,9 @@ function printAricle($that) { ?>
 					<?php printTag($that, 1); ?>
 					<span class="list-tag"><i class="fa fa-user-o" aria-hidden="true"></i> <a class="badge badge-warning badge-pill" href="<?php $that->author->permalink(); ?>"><?php $that->author();?></a></span>
 				</div>
-				<?php $that->content(''); ?>
+				<div class="markdown-body">
+				    <?php $that->content(''); ?>
+				</div>
 				<br/>
 				<a href="<?php $that->permalink() ?>">
 					<button class="btn btn-icon btn-3 btn-outline-primary" type="button">

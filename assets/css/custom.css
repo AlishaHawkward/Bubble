@@ -1,10 +1,14 @@
 .navbar_search_container {
-  margin-left: 16px;
-  width: 160px;
-  transition: all .5s;
+    margin-left: 16px;
+    width: 180px;
+    transition: all .5s;
 }
 .navbar_search_container:hover {
-  width: 280px;
+    width: 220px;
+}
+.navbar_search_container *, .navbar_search_container *:focus {
+    background-color: transparent!important;
+    color: white;
 }
 .post-title {
     font-size: 32px;
